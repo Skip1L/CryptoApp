@@ -14,24 +14,54 @@
     d:DesignWidth="800"
     mc:Ignorable="d">
 
-    <Grid Margin="56,0">
+<Grid Margin="56,0">
         <ui:VirtualizingItemsControl
-            Foreground="{DynamicResource TextFillColorSecondaryBrush}"
             ItemsSource="{Binding ViewModel.Colors, Mode=OneWay}"
             VirtualizingPanel.CacheLengthUnit="Item">
             <ItemsControl.ItemTemplate>
                 <DataTemplate DataType="{x:Type models:DataColor}">
-                    <ui:Button
-                        Width="80"
-                        Height="80"
-                        Margin="2"
-                        Padding="0"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        Appearance="Secondary"
-                        Background="{Binding Color, Mode=OneWay}"
+                    <ui:VirtualizingGridView
                         FontSize="25"
-                        Icon="Fluent24" />
+                        Margin="100,10">
+                        <Border
+                            BorderBrush="Gray"
+                            CornerRadius="4"
+                            Padding="5"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Width="700"
+                            BorderThickness="1">
+                            <Grid>
+                            <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label
+                                    Grid.Column="0"
+                                    Content="{Binding CryptoName, Mode=OneWay}"
+                                    Padding="10,0"
+                                    HorizontalAlignment="Left"
+                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                                    FontSize="25" VerticalContentAlignment="Center"/>
+                                <Label
+                                    Grid.Column="1"
+                                    Content="{Binding CryptoSymbol, Mode=OneWay}"
+                                    HorizontalAlignment="Left"
+                                    Padding="10, 0"
+                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                                    FontSize="25" VerticalContentAlignment="Center"/>
+                                <Label
+                                    Grid.Column="2"
+                                    Content="{Binding CryptoCurrency, Mode=OneWay}"
+                                    Padding="10,0"
+                                    HorizontalAlignment="Right"
+                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                                    FontSize="25" VerticalContentAlignment="Center"/>
+                            </Grid>
+                        </Border>
+                        
+                    </ui:VirtualizingGridView>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ui:VirtualizingItemsControl>

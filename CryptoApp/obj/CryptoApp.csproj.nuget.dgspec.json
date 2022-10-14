@@ -44,17 +44,25 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "CoinGeckoAsyncApi": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[6.0.1, )"
             },
-            "Microsoft.Toolkit.Mvvm": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[7.1.2, )"
+              "version": "[13.0.1, )"
             },
             "WPF-UI": {
               "target": "Package",
-              "version": "[2.0.2, )"
+              "version": "[2.0.3, )"
             }
           },
           "imports": [

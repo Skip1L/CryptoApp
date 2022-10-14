@@ -2,6 +2,30 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "CoinGeckoAsyncApi/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/CoinGecko.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CoinGecko.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -399,15 +423,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Toolkit.Mvvm/7.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0/Microsoft.Toolkit.Mvvm.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/Microsoft.Toolkit.Mvvm.dll": {}
-        }
-      },
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
@@ -424,6 +439,15 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -537,7 +561,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "WPF-UI/2.0.2": {
+      "WPF-UI/2.0.3": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "6.0.0"
@@ -555,6 +579,46 @@
     }
   },
   "libraries": {
+    "CoinGeckoAsyncApi/1.7.0": {
+      "sha512": "canTFszN3T1nGhGbGYh138oOvEehqZ3z223VDDRzbBmP/ahiP89Bmeg6WfS4Jn5MSpaZdx1FFt6aulK+ENi3Sg==",
+      "type": "package",
+      "path": "coingeckoasyncapi/1.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "coingeckoasyncapi.1.7.0.nupkg.sha512",
+        "coingeckoasyncapi.nuspec",
+        "lib/netstandard2.0/CoinGecko.dll"
+      ]
+    },
+    "CommunityToolkit.Mvvm/8.0.0": {
+      "sha512": "Jiu2g5WUdXRwzhJkHB+B4JBKP5A5+fp8xKiW/ZQo5PI+DruI7MbPEcK9K/Aw0YzTiWRuG6CBluzYIWN5Eo7BkQ==",
+      "type": "package",
+      "path": "communitytoolkit.mvvm/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "build/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "build/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "communitytoolkit.mvvm.8.0.0.nupkg.sha512",
+        "communitytoolkit.mvvm.nuspec",
+        "lib/net6.0/CommunityToolkit.Mvvm.dll",
+        "lib/net6.0/CommunityToolkit.Mvvm.pdb",
+        "lib/net6.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
+      ]
+    },
     "Microsoft.Extensions.Configuration/6.0.0": {
       "sha512": "tq2wXyh3fL17EMF2bXgRhU7JrbO3on93MRKYxzz4JzzvuGSA1l0W3GI9/tl8EO89TH+KWEymP7bcFway6z9fXg==",
       "type": "package",
@@ -1121,32 +1185,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Toolkit.Mvvm/7.1.2": {
-      "sha512": "tUQn6ar9oP7kmYaZ6pWabxpQaqw95Bsf+GG7prEL0y5MV5F60z76lI/Ppps9zcTqwd7e5CrdZBcdfor9WuvohA==",
-      "type": "package",
-      "path": "microsoft.toolkit.mvvm/7.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "License.md",
-        "ThirdPartyNotices.txt",
-        "analyzers/dotnet/cs/Microsoft.Toolkit.Mvvm.SourceGenerators.dll",
-        "analyzers/dotnet/cs/Microsoft.Toolkit.Mvvm.SourceGenerators.pdb",
-        "analyzers/dotnet/cs/Microsoft.Toolkit.Mvvm.SourceGenerators.xml",
-        "lib/net5.0/Microsoft.Toolkit.Mvvm.dll",
-        "lib/net5.0/Microsoft.Toolkit.Mvvm.pdb",
-        "lib/net5.0/Microsoft.Toolkit.Mvvm.xml",
-        "lib/netstandard2.0/Microsoft.Toolkit.Mvvm.dll",
-        "lib/netstandard2.0/Microsoft.Toolkit.Mvvm.pdb",
-        "lib/netstandard2.0/Microsoft.Toolkit.Mvvm.xml",
-        "lib/netstandard2.1/Microsoft.Toolkit.Mvvm.dll",
-        "lib/netstandard2.1/Microsoft.Toolkit.Mvvm.pdb",
-        "lib/netstandard2.1/Microsoft.Toolkit.Mvvm.xml",
-        "microsoft.toolkit.mvvm.7.1.2.nupkg.sha512",
-        "microsoft.toolkit.mvvm.nuspec"
-      ]
-    },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "type": "package",
@@ -1174,6 +1212,33 @@
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -1377,10 +1442,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "WPF-UI/2.0.2": {
-      "sha512": "Nj2Viy7dbqin4L//9c99wo2cYOT90uG2k1JAGnXbnbvKAOAbERwGxIm3sAKziB21RP9hKW/Z2jurAsZ4Xu0Tkg==",
+    "WPF-UI/2.0.3": {
+      "sha512": "1e9Q8pQGfi9YFp3WavKZjXyLYohIjXxk5q0NqEaamofVgIdxRxwqrkWha584FBUISRBBT/qFOrl97YBl5bs30Q==",
       "type": "package",
-      "path": "wpf-ui/2.0.2",
+      "path": "wpf-ui/2.0.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1399,7 +1464,7 @@
         "lib/netcoreapp3.1/Wpf.Ui.dll",
         "lib/netcoreapp3.1/Wpf.Ui.xml",
         "tools/VisualStudioToolsManifest.xml",
-        "wpf-ui.2.0.2.nupkg.sha512",
+        "wpf-ui.2.0.3.nupkg.sha512",
         "wpf-ui.nuspec",
         "wpfui.png"
       ]
@@ -1407,9 +1472,11 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "CoinGeckoAsyncApi >= 1.7.0",
+      "CommunityToolkit.Mvvm >= 8.0.0",
       "Microsoft.Extensions.Hosting >= 6.0.1",
-      "Microsoft.Toolkit.Mvvm >= 7.1.2",
-      "WPF-UI >= 2.0.2"
+      "Newtonsoft.Json >= 13.0.1",
+      "WPF-UI >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -1456,17 +1523,25 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
+          "CoinGeckoAsyncApi": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
             "version": "[6.0.1, )"
           },
-          "Microsoft.Toolkit.Mvvm": {
+          "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[7.1.2, )"
+            "version": "[13.0.1, )"
           },
           "WPF-UI": {
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "[2.0.3, )"
           }
         },
         "imports": [

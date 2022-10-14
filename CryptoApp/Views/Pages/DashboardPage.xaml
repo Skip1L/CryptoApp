@@ -22,7 +22,7 @@
 
         <ui:Button
             Grid.Column="0"
-            Command="{Binding ViewModel.OnCounterIncrementCommand, Mode=OneWay}"
+            Command="{Binding ViewModel.CounterIncrementCommand, Mode=OneWay}"
             Content="Click me!"
             Icon="Fluent24" />
         <TextBlock

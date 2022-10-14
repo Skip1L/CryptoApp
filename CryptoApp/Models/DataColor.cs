@@ -4,6 +4,8 @@ namespace CryptoApp.Models
 {
     public struct DataColor
     {
-        public Brush Color { get; set; }
+        public string CryptoSymbol { get; set; }
+        public string CryptoName { get; set; }
+        public string? CryptoCurrency { get; set; }
     }
 }
