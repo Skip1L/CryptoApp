@@ -59,5 +59,3 @@ D:\CryptoApp\CryptoApp\obj\Debug\net6.0-windows\Views\Pages\SearchPage.g.cs
 D:\CryptoApp\CryptoApp\obj\Debug\net6.0-windows\Views\Pages\SearchPage.baml
 D:\CryptoApp\CryptoApp\obj\Debug\net6.0-windows\Views\Pages\HomePage.g.cs
 D:\CryptoApp\CryptoApp\obj\Debug\net6.0-windows\Views\Pages\HomePage.baml
-D:\CryptoApp\CryptoApp\bin\Debug\net6.0-windows\ScottPlot.dll
-D:\CryptoApp\CryptoApp\bin\Debug\net6.0-windows\ScottPlot.WPF.dll

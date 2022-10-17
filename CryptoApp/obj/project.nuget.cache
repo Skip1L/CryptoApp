@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BVok4k2GDxPw1JiUgsjSVfVtDlYBtC3sBw1jHOyUtlVai99dqpRe10ZnCda1CcQacrZfzZvt9Tw6J3g47FW2Hw==",
+  "dgSpecHash": "xJc6b82WvwQKqc7JLdIwzp3xUdjfZNA7z5l/BoXTi00lrL3T7nNvmWdV41lww8UkYzWeXaJDZITH33XZm2hMew==",
   "success": true,
   "projectFilePath": "D:\\CryptoApp\\CryptoApp\\CryptoApp.csproj",
   "expectedPackageFiles": [
@@ -33,12 +33,9 @@
     "C:\\Users\\Ілля\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Ілля\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Ілля\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\Ілля\\.nuget\\packages\\scottplot\\4.1.58\\scottplot.4.1.58.nupkg.sha512",
-    "C:\\Users\\Ілля\\.nuget\\packages\\scottplot.wpf\\4.1.58\\scottplot.wpf.4.1.58.nupkg.sha512",
     "C:\\Users\\Ілля\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Ілля\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\Ілля\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\Ілля\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Ілля\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Ілля\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\Ілля\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",

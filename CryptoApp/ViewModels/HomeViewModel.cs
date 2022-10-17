@@ -1,26 +1,11 @@
-﻿using CryptoApp.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Markup;
-using System.Windows.Media;
-using System.Windows.Navigation;
 using CoinGecko.Clients;
 using CoinGecko.Entities.Response.Coins;
 using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using CryptoApp.Services;
-using CryptoApp.Views.Pages;
 using Newtonsoft.Json;
 using Wpf.Ui.Common.Interfaces;
-using Wpf.Ui.Controls;
-using Wpf.Ui.Mvvm.Contracts;
 using MessageBox = System.Windows.MessageBox;
 
 namespace CryptoApp.ViewModels

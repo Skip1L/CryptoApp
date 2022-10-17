@@ -11,7 +11,6 @@
 
 using CryptoApp.Views;
 using CryptoApp.Views.Pages;
-using ScottPlot;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -78,7 +77,7 @@ namespace CryptoApp.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CryptoApp;component/views/container.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CryptoApp;V1.0.0.0;component/views/container.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\Container.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -12,7 +12,6 @@
 using CoinGecko.Entities.Response.Coins;
 using CryptoApp.Models;
 using CryptoApp.Views.Pages;
-using ScottPlot;
 using System;
 using System.Diagnostics;
 using System.Windows;

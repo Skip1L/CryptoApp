@@ -11,7 +11,6 @@
 
 using CryptoApp.Helpers;
 using CryptoApp.Views.Pages;
-using ScottPlot;
 using System;
 using System.Diagnostics;
 using System.Windows;

@@ -1,9 +1,4 @@
-﻿using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Windows.Controls;
-using CryptoApp.ViewModels;
-using ScottPlot;
-using Wpf.Ui.Common.Interfaces;
+﻿using Wpf.Ui.Common.Interfaces;
 
 namespace CryptoApp.Views.Pages
 {

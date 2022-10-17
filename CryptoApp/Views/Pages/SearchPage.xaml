@@ -102,8 +102,6 @@
                 Margin="12,0"
                 VerticalAlignment="Bottom"
                 Text="{Binding ViewModel.TotalVolume, Mode=OneWay}"/>
-            
         </Grid>
-        
     </Grid>
 </ui:UiPage>
