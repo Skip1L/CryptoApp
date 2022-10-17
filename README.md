@@ -6,3 +6,4 @@
 
 Also supported light\dark theme
 
+I wanted to implement candlestick chart, but I did not find an free API that would work with MVVM.
