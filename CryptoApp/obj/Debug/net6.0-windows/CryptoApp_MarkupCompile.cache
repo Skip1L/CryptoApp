@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\CryptoApp\CryptoApp\App.xaml
-41529367404
+4829392716
 1882702876
-15188000819
-224601295688
-Views\Container.xaml;Views\Pages\DashboardPage.xaml;Views\Pages\DataPage.xaml;Views\Pages\SettingsPage.xaml;
+14-942887240
+2261266206566
+Views\Container.xaml;Views\Pages\HomePage.xaml;Views\Pages\SearchPage.xaml;Views\Pages\SettingsPage.xaml;
 
 False
 

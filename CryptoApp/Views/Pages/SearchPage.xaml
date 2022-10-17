@@ -1,0 +1,109 @@
+﻿<ui:UiPage
+    x:Class="CryptoApp.Views.Pages.SearchPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CryptoApp.Views.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="SearchPage"
+    d:DataContext="{d:DesignInstance local:SearchPage,
+                                     IsDesignTimeCreatable=False}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    mc:Ignorable="d">
+
+    <Grid Margin="56,0" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ui:TextBox
+                Grid.Row="0"
+                Grid.Column="0"
+                Name="TextBox"
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Center"
+                MinWidth="224"
+                Text ="{Binding ViewModel.Search, Mode=TwoWay}"
+                PlaceholderText="Search"
+                Width="200"/>
+            <ui:Button
+                Height="{Binding ActualHeight, ElementName=TextBox}"
+                Grid.Row="0"
+                Grid.Column="1"
+                Command="{Binding ViewModel.SearchCommand, Mode=OneWay}"
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Center"
+                Icon="Search48"/>
+            <ui:Button
+                Grid.Row="0"
+                Grid.Column="1"
+                IsEnabled="{Binding ViewModel.IsEnableButton, Mode=OneWay}"
+                Height="{Binding ActualHeight, ElementName=TextBox}"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Icon="Link48"
+                Content="Home page"
+                Command="{Binding ViewModel.OpenHomePageCommand, Mode=OneWay}"/>
+        </Grid>
+        <Grid
+            Grid.Row="1"
+            Margin="0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Name="CoinName"
+                Grid.Column="0"
+                FontSize="28"
+                Margin="12,0"
+                VerticalAlignment="Center"
+                Text="{Binding ViewModel.Name, Mode=OneWay}"/>
+            <TextBlock
+                Grid.Column="1"
+                FontSize="20"
+                Height="{Binding Height, ElementName=CoinName}"
+                Margin="0"
+                VerticalAlignment="Center"
+                Text="{Binding ViewModel.Symbol, Mode=OneWay}"/>
+            <TextBlock
+                Grid.Column="2"
+                FontSize="28"
+                Margin="12,0"
+                VerticalAlignment="Center"
+                Text="{Binding ViewModel.CurrentPrice, Mode=OneWay}"/>
+            <TextBlock
+                Grid.Column="3"
+                FontSize="28"
+                Margin="12,0"
+                VerticalAlignment="Center"
+                Text="{Binding ViewModel.PriceChange, Mode=OneWay}"/>
+        </Grid>
+        <Grid Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Column="0"
+                FontSize="28"
+                Margin="12,0"
+                VerticalAlignment="Bottom"
+                Text="{Binding ViewModel.TotalVolume, Mode=OneWay}"/>
+            
+        </Grid>
+        
+    </Grid>
+</ui:UiPage>

@@ -47,10 +47,10 @@ namespace CryptoApp
                 services.AddScoped<ViewModels.ContainerViewModel>();
 
                 // Views and ViewModels
-                services.AddScoped<Views.Pages.DashboardPage>();
-                services.AddScoped<ViewModels.DashboardViewModel>();
-                services.AddScoped<Views.Pages.DataPage>();
-                services.AddScoped<ViewModels.DataViewModel>();
+                services.AddScoped<Views.Pages.SearchPage>();
+                services.AddScoped<ViewModels.SearchViewModel>();
+                services.AddScoped<Views.Pages.HomePage>();
+                services.AddScoped<ViewModels.HomeViewModel>();
                 services.AddScoped<Views.Pages.SettingsPage>();
                 services.AddScoped<ViewModels.SettingsViewModel>();
 

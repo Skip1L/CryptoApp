@@ -32,23 +32,24 @@ namespace CryptoApp.ViewModels
 
         private void InitializeViewModel()
         {
-            ApplicationTitle = "WPF UI - CryptoApp";
+            ApplicationTitle = "CryptoApp";
 
             NavigationItems = new ObservableCollection<INavigationControl>
             {
                 new NavigationItem()
                 {
                     Content = "Home",
-                    PageTag = "dashboard",
+                    PageTag = "home",
                     Icon = SymbolRegular.Home24,
-                    PageType = typeof(Views.Pages.DashboardPage)
+                    PageType = typeof(Views.Pages.HomePage)
+                    
                 },
                 new NavigationItem()
                 {
-                    Content = "Data",
-                    PageTag = "data",
+                    Content = "Search",
+                    PageTag = "sea",
                     Icon = SymbolRegular.DataHistogram24,
-                    PageType = typeof(Views.Pages.DataPage)
+                    PageType = typeof(Views.Pages.SearchPage)
                 }
             };
 
